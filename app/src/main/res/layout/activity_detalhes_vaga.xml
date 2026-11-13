@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/detalheTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="#1976D2"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detalheEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textColor="#666666"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/detalheCategoria"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:textColor="#00838F"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/detalheSalario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:textColor="#2E7D32"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:text="Descrição da Vaga:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detalheDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnCandidatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2E7D32"
+            android:text="Candidatar-se à Vaga"
+            android:textColor="#FFFFFF" />
+
+        <!-- Botão para a Empresa Editar Vaga -->
+        <Button
+            android:id="@+id/btnEditarVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editar Vaga"
+            android:backgroundTint="#F57C00"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+        <!-- Botão para a Empresa Encerrar/Excluir Vaga -->
+        <Button
+            android:id="@+id/btnExcluirVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encerrar / Excluir Vaga"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar Nova Vaga"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/editTituloVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título da Vaga (Ex: Atendente de Loja)"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editEmpresaVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome da Empresa / Comércio"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/editCategoriaVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha o Setor (Ex: Comércio, Hotel...)"
+            android:layout_marginBottom="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCategoriaVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp"/>
+
+        <EditText
+            android:id="@+id/editSalarioVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Salário ou Diária (Ex: R$ 1.800,00)"
+            android:inputType="text"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/editDescricaoVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição detalhada e requisitos..."
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:gravity="top|start"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSalvarVaga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar e Publicar Vaga"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
